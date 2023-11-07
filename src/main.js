@@ -229,13 +229,13 @@ function createViews() {
 		/**
 		 * fix customer URL not loading correctly ... 
 		 */
+		//REDACTING CLIENT DOMAINS
+		customerURL = store.getCustomerURL() != "" ? store.getCustomerURL() : "https://C.cloud.com"
 
-		customerURL = store.getCustomerURL() != "" ? store.getCustomerURL() : "https://claratti.cloud.com"
-
-		if (customerURL.match("https://hallclaratti.cloud.com")) {
-			store.setCustomerURL("https://hallcontracting.cloud.com")
+		if (customerURL.match("https://C.cloud.com")) {
+			store.setCustomerURL("https://C.cloud.com")
 			customerURL = store.getCustomerURL()
-			console.log("setting hall contracing URL")
+			console.log("setting URL")
 		}
 		
 		var receiverURL = customerURL.replace("https://", "")
