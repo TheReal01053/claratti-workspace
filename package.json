@@ -14,7 +14,7 @@
     "sign": "signtool sign /debug /a /t http://timestamp.sectigo.com/ \"./dist/Claratti Workspace Setup 1.0.9.exe\"",
     "dist-all": "electron-builder -mw",
     "gh-publish": "electron-builder --x64 --win -p always",
-    "token": "GH_TOKEN=17d44e2551f97cd0a86c37af69c540324fdc6453"
+    "token": "--REDACTED SENSITIVE INFORMATION--"
   },
   "build": {
     "appId": "com.claratti.workspace",
@@ -31,7 +31,7 @@
     "win": {
       "target": "nsis",
       "icon": "./build/cloud2.ico",
-      "certificateSubjectName": "Claratti Workspace (Intelligent IP Hosting Pty Ltd"
+      "certificateSubjectName": "--REDACTED SENSITIVE INFORMATION--"
     },
     "nsis": {
       "installerIcon": "./build/cloud2.ico",
