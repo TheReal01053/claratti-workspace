@@ -11,7 +11,8 @@
 </p>
 
 #### Developed using the following key technologies:
- * ***Javascript (Electron Framework)***
+ * ***NodeJS***
+ * **Electron Framework**
  * **HTML**
  * **CSS**
 
