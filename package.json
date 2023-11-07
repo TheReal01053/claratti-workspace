@@ -1,0 +1,68 @@
+{
+  "name": "claratti-workspace",
+  "productName": "Claratti Workspace",
+  "version": "1.0.11",
+  "description": "An application for using Citrix Workspace",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "production": "electron .",
+    "lint": "eslint **/*.js",
+    "inspect-main": "electron-inspector",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder build",
+    "sign": "signtool sign /debug /a /t http://timestamp.sectigo.com/ \"./dist/Claratti Workspace Setup 1.0.9.exe\"",
+    "dist-all": "electron-builder -mw",
+    "gh-publish": "electron-builder --x64 --win -p always",
+    "token": "GH_TOKEN=17d44e2551f97cd0a86c37af69c540324fdc6453"
+  },
+  "build": {
+    "appId": "com.claratti.workspace",
+    "files": [
+      "**/*",
+      "./build/cloud2.ico",
+      "./build/cloud2.icns",
+      "./build/cloudpng.png"
+    ],
+    "mac": {
+      "target": "dmg",
+      "icon": "./build/cloud2.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "./build/cloud2.ico",
+      "certificateSubjectName": "Claratti Workspace (Intelligent IP Hosting Pty Ltd"
+    },
+    "nsis": {
+      "installerIcon": "./build/cloud2.ico",
+      "installerHeaderIcon": "./build/cloud2.ico",
+      "uninstallerIcon": "./build/cloud2.ico",
+      "createDesktopShortcut": true,
+      "shortcutName": "Claratti Workspace",
+      "deleteAppDataOnUninstall": true
+    }
+  },
+  "repository": "git@github.com:Claratti/Workspace-App-Public.git",
+  "keywords": [
+    "Claratti",
+    "Workspace",
+    "Virtual",
+    "Workstation",
+    "IIPH"
+  ],
+  "author": "Claratti Workspace",
+  "developer": "Micheal Thompson",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^18.2.3",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "auto-launch": "^5.0.5",
+    "electron-json-storage": "^4.4.0",
+    "electron-log": "^4.3.1",
+    "electron-remote": "^1.3.0",
+    "electron-updater": "^4.3.5",
+    "yarn": "^1.22.10"
+  }
+}

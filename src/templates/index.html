@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<meta charset="UTF-8">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<link rel="stylesheet" href="../css/style.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<script>
+			$("fadeContainer").fadeIn(2000);
+
+			document.addEventListener("keyup", function(event) {
+  				if (event.keyCode === 13) {
+    				document.getElementById("setEmail").click();
+  				}
+			});
+		</script>
+
+  	</head>
+	<body>
+		<div class="page-wrap">
+  			<div class="header">
+				<img src="../assets/logo.png" alt="Claratti">
+			</div>
+	
+			<div id="fadeContainer" class="container">
+				<div class="form-group">
+					<label for="inputEmail">Email:</label>
+					<input type="email" class="form-control" id="inputEmail" placeholder="work email">
+				</div>
+				<div style="padding-right:90px" class="form-group">
+					<label class="form-check-label"><input class="rememberMe" id="rememberMe" type="checkbox"> Remember me</label>
+				</div>
+				<p id="errorMsg"></p>
+				<div>
+					<button id="setEmail" type="submit" class="button">Continue</button>
+				</div>
+			</div>
+		</div>
+		<footer id="bottom-footer">
+			<p id="footer-text">© 2021 Intelligent IP hosting T/As Claratti. All rights reserved</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+#bottom-footer {
+    position: absolute;
+	background-color: #2C5269;
+    left: 0;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+}
+
+#footer-text {
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	padding-top: 18px;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #2C5269;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header img {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 16px;
+}
+
+.container {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	background-color: #2C5269; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.button:hover {
+	opacity: 0.6
+}
+
+.button:focus {
+	outline: 0 !important
+}
+
+#errorMsg {
+	display: none;
+	visibility: hidden;
+}
+
+.loader {
+	background-color: #2C5269; 
+	border: none;
+	color:white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 5px 25px;
+	font-size: 12px;
+	animation-name: fadeIn;
+	animation-duration: 14s;
+}
+
+@keyframes fadeIn {
+	0%   {opacity: 1.0; }
+	5%  {opacity: 0.8; }
+	10%  {opacity: 1.0; }
+	15%  {opacity: 0.8; }
+	20%  {opacity: 1.0; }
+	25%  {opacity: 0.8; }
+	30%  {opacity: 1.0; }
+	35%  {opacity: 0.8; }
+	40%  {opacity: 1.0; }
+	45%  {opacity: 0.8; }
+	50%  {opacity: 1.0; }
+	55%  {opacity: 0.8; }
+	60%  {opacity: 1.0; }
+	65%  {opacity: 0.8; }
+	70%  {opacity: 1.0; }
+	75%  {opacity: 0.8; }
+	80%  {opacity: 1.0; }
+	85%  {opacity: 0.8; }
+	90%  {opacity: 1.0; }
+	95%  {opacity: 0.8; }
+	100% {opacity: 1.0; }
+}
