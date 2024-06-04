@@ -7,7 +7,7 @@
 
 #### Description
 <p>
-	This software is used to connect to Citrix Workspace it routes through the customer URL as the current Citrix Workspace Desktop application does not support session timeouts.
+	This software is used to connect to Citrix Workspace it routes through the customer URL as the current Citrix Workspace Desktop application does not support session timeouts / is unreliable at times.
 </p>
 
 #### Developed using the following key technologies:
